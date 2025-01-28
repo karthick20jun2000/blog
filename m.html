@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="m.css" rel="stylesheet" type="text/css">
+    <style>
+        #increase {
+            width: 20px;
+            height: 20px;
+            background-color: red;
+        }
+
+        #increase:hover {
+            width: 100px;
+            height: 100px;
+            transition: 0.5s;
+            display: block;
+        }
+    </style>
+
+</head>
+
+<body>
+    <p id="increase" style="display: none;"> <a class="border-right" href="./index.html">Home</a>
+        <a class="border-right" href="./categories.html">Categories</a>
+        <a class="border-right" href="./author.html">Authors</a>
+        <a class="border-right" href="./post.html">Shop</a>
+        <a href="./contact.html">Contact</a>
+    </p>
+    <button onclick="clickhere()">click</button>
+
+    <script src="./m.js">
+        // function clickhere() {
+        //     document.getElementById("increase").style.display = 'block'
+        // }
+    </script>
+
+</body>
+
+</html>

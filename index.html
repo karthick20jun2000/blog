@@ -9,29 +9,53 @@
 </head>
 
 <body>
-    <header class="d-flex align-items-center justify-space-bw">
+    <header class="d-flex align-items-center justify-space-bw position-relative">
+        <button class="toogle" onclick="toggle1()"> <img src="./assets/images/toggle.png"></button>
+
+
+        <!-- <div id="toogle1">
+            <div class="d-flex">
+                <nav class="toogle">
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn"><img src="./assets/images/toggle.png"></label>
+                    <a class="border-right" href="./index.html">Home</a>
+                    <a class="border-right" href="./categories.html">Categories</a>
+                    <a class="border-right" href="./author.html">Authors</a>
+                    <a class="border-right" href="./post.html">Shop</a>
+                    <a href="./contact.html">Contact</a>
+
+                </nav>
+                <div class="imgs">
+                    <a href="https://x.com/"><img src="./assets/images/twitter.png"></a>
+                    <a href="https://instagram.com/"><img src="./assets/images/insta.png"></a>
+                    <a href="https://facebook.com/"><img src="./assets/images/facebook.png"></a>
+
+                </div>
+            </div>
+
+        </div> -->
         <h4>@ COMPANY LOGO</h4>
-        <nav>
-            <a class="border-right" href="home">Home</a>
-            <a class="border-right" href="categories">Categories</a>
-            <a class="border-right" href="authors">Authors</a>
-            <a class="border-right" href="shop">Shop</a>
-            <a href="contact">Contact</a>
+        <nav id="toogle">
+
+            <a class="border-right" href="./index.html">Home</a>
+            <a class="border-right" href="./categories.html">Categories</a>
+            <a class="border-right" href="./author.html">Authors</a>
+            <a class="border-right" href="./post.html">Shop</a>
+            <a href="./contact.html">Contact</a>
         </nav>
-        <div class="d-flex justify-content-center align-items-center gap-3">
+        <div class="d-flex justify-content-center align-items-center gap-3 imgs" id="toogle1">
             <a href="https://x.com/"><img src="./assets/images/twitter.png"></a>
             <a href="https://instagram.com/"><img src="./assets/images/insta.png"></a>
-            <a class="" href="https://facebook.com/"><img src="./assets/images/facebook.png"></a>
+            <a href="https://facebook.com/"><img src="./assets/images/facebook.png"></a>
 
         </div>
+        <button class="toogle" onclick="toggle()"> <img src="./assets/images/toggle.png"></button>
     </header>
     <section class="herosec position-relative d-flex justify-content-center align-items-center text-center">
         <div class="herosec-content pt-5 position-relative w-50">
             <small class="text-col-dddddd">Design</small>
             <h1>Lorem Ipsum</h1>
-            <p class="text-col-dddddd mb-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
-                took a galley of type and scrambled it to make a type specimen
+            <p class="text-col-dddddd mb-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
                 book. </p>
             <button class="hero-btn">
                 Read More
@@ -42,53 +66,47 @@
     </section>
     <!-- card section -->
     <section class="sec1-container">
-        <div class=" d-flex justify-space-bw algin-items-center text-center my-3 w-100 space-evenly">
-            <div class="w-25">
+        <div class=" d-flex flex-col algin-items-center text-center my-3 w-100 space-evenly">
+            <div class="w-25 wm-90">
                 <img src="./assets/images/cardimg.png" alt="" class="radious-1">
                 <h4 class="text-col-444444">The standard Lorem Ipsum passage, used since the 1500s</h4>
-                <p class="text-col-606060">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt
+                <p class="text-col-606060">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                 </p>
 
             </div>
-            <div class="w-25">
+            <div class="w-25 wm-90">
                 <img src="./assets/images/cardimg.png" alt="" class="radious-1">
                 <h4 class="text-col-444444">The standard Lorem Ipsum passage, used since the 1500s</h4>
-                <p class="text-col-606060">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt </p>
+                <p class="text-col-606060">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </p>
 
             </div>
-            <div class="w-25">
+            <div class="w-25 wm-90">
                 <img src="./assets/images/cardimg.png" alt="" class="radious-1">
                 <h4 class="text-col-444444">The standard Lorem Ipsum passage, used since the 1500s</h4>
-                <p class="text-col-606060">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt </p>
+                <p class="text-col-606060">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </p>
 
             </div>
         </div>
     </section>
     <!-- section 3 -->
-    <section class="latestPosts py-4 bg-d6d0d0">
-        <div class="latestPostsContainer m-auto">
+    <section class="latestPosts py-4 pm-1 bg-d6d0d0 mmx-1">
+        <div class="latestPostsContainer m-auto ">
             <h1 class="m-0 text-col-444444 text-center">Lorem Ipsum
             </h1>
-            <p class="text-center text-col-979797">"There is no one who loves pain itself, who seeks after it and wants
-                to have it, simply because it is pain..."
+            <p class="text-center text-col-979797">"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
             </p>
-            <div class="d-flex allpost-block gap-2">
+            <div class="d-flex allpost-block gap-2 flex-wrap txt-center">
                 <div class="allpost">
-                    <div
-                        class="heroSec1 position-relative d-flex justify-content-center align-items-center text-center radious-1">
+                    <div class="heroSec1 position-relative d-flex justify-content-center align-items-center text-center radious-1">
                         <div class=" herosec-content position-relative w-50 my-3">
                             <h1 class="text-col-ffffff">Lorem Ipsum</h1>
-                            <p class="text-col-dcdcdc">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                industry. </p>
+                            <p class="text-col-dcdcdc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                         </div>
                         <div class="position-absolute bg-trans-layer radious-1"></div>
                     </div>
-                    <div class="d-flex align-items-center gap-1 my-2">
-                        <img src="assets/images/cardimg.png" class="w-50 radious-1">
-                        <div class="w-50">
+                    <div class="d-flex align-items-center gap-1 my-2 flex-wrap justify-content-center">
+                        <img src="assets/images/cardimg.png" class="w-50 wm-100 radious-1">
+                        <div class="w-50 wm-100 txt-center">
                             <small>Lorem Ipsum is simply dummy text</small>
                             <h5 class="my-1">What is Lorem Ipsum?</h5>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
@@ -97,9 +115,9 @@
 
 
                     </div>
-                    <div class="d-flex align-items-center gap-1 my-2">
-                        <img src="assets/images/cardimg.png" class="w-50 radious-1">
-                        <div class="w-50">
+                    <div class="d-flex align-items-center gap-1 my-2 flex-wrap justify-content-center">
+                        <img src="assets/images/cardimg.png" class="w-50 wm-100 radious-1">
+                        <div class="w-50 wm-100 txt-center">
                             <small>Lorem Ipsum is simply dummy text</small>
                             <h5 class="my-1">What is Lorem Ipsum?</h5>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
@@ -116,33 +134,33 @@
                         <div class="bg-ffffff p-2 radious-1">
                             <h3 class="font-weight-bold mt-0 mb-0 text-col-444444">Trending Posts</h3>
                             <div class="allPost w-100">
-                                <div class="d-flex gap-1 align-items-center my-2">
-                                    <img src="assets/images/cardimg.png" class="w-50 radious-1">
-                                    <div class="w-50">
+                                <div class="d-flex gap-1 align-items-center my-2 flex-wrap">
+                                    <img src="assets/images/cardimg.png" class="w-50 mw-100 wm-100 radious-1">
+                                    <div class="w-50 mw-100 wm-100">
                                         <h5 class="my-1">What is Lorem Ipsum?</h5>
                                         <p>Lorem Ipsum is simply dummy text of the printing.
                                         </p>
                                     </div>
                                 </div>
-                                <div class="d-flex gap-1 align-items-center my-2">
-                                    <img src="assets/images/cardimg.png" class="w-50 radious-1">
-                                    <div class="w-50">
+                                <div class="d-flex gap-1 align-items-center my-2 flex-wrap">
+                                    <img src="assets/images/cardimg.png" class="w-50 mw-100 wm-100 radious-1">
+                                    <div class="w-50 mw-100 wm-100">
                                         <h5 class="my-1">What is Lorem Ipsum?</h5>
                                         <p>Lorem Ipsum is simply dummy text of the printing.
                                         </p>
                                     </div>
                                 </div>
-                                <div class="d-flex gap-1 align-items-center my-2">
-                                    <img src="assets/images/cardimg.png" class="w-50 radious-1">
-                                    <div class="w-50">
+                                <div class="d-flex gap-1 align-items-center my-2 flex-wrap">
+                                    <img src="assets/images/cardimg.png" class="w-50 mw-100 wm-100 radious-1">
+                                    <div class="w-50 mw-100 wm-100">
                                         <h5 class="my-1">What is Lorem Ipsum?</h5>
                                         <p>Lorem Ipsum is simply dummy text of the printing.
                                         </p>
                                     </div>
                                 </div>
-                                <div class="d-flex gap-1 align-items-center my-2">
-                                    <img src="assets/images/cardimg.png" class="w-50 radious-1">
-                                    <div class="w-50">
+                                <div class="d-flex gap-1 align-items-center my-2 flex-wrap ">
+                                    <img src="assets/images/cardimg.png" class="w-50 mw-100 wm-100 radious-1">
+                                    <div class="w-50 mw-100 wm-100">
                                         <h5 class="my-1">What is Lorem Ipsum?</h5>
                                         <p>Lorem Ipsum is simply dummy text of the printing.
                                         </p>
@@ -164,56 +182,53 @@
 
     </section>
     <!-- section3 -->
-    <section class=" section3-container ">
+    <section class=" section3-container max-w">
         <div>
             <div class=" car-div1 ">
-                <h2 class=" text-col-444444 my-2">There is no one who loves pain itself.</h2>
+                <h2 class=" text-col-444444 my-2 txt-center">There is no one who loves pain itself.</h2>
             </div>
-            <div class=" card-section3 d-flex ">
+            <div class=" card-section3 d-flex flex-wrap txt-center">
 
                 <div class="">
-                    <img src=" ./assets/images/sec3-img.png " class="w-90 d-flex gap-1 radious-1 ">
-                    <div class=" section3-div ">
+                    <img src=" ./assets/images/sec3-img.png " class="w-90 wm-100 d-flex gap-1 radious-1">
+                    <div class=" section3-div w-90 ">
                         <h3 class="text-col-444444">Contrary to popular belief</h3>
-                        <p class="text-col-7a7a7a">Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of " de Finibus
-                            Bonorum et Malorum " (The Extremes of Good and Evil) by Cicero, written in 45 BC.
+                        <p class="text-col-7a7a7a">Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of " de Finibus Bonorum et Malorum " (The Extremes of Good and Evil) by Cicero, written in 45 BC.
                         </p>
                     </div>
                 </div>
                 <div>
-                    <img src=" ./assets/images/sec3-img.png " class="w-90 d-flex gap-1 radious-1">
-                    <div class=" section3-div ">
+                    <img src=" ./assets/images/sec3-img.png " class="w-90 wm-100 d-flex gap-1 radious-1">
+                    <div class=" section3-div w-90">
                         <h3 class="text-col-444444">Contrary to popular belief</h3>
-                        <p class="text-col-7a7a7a">Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of " de Finibus
-                            Bonorum et Malorum " (The Extremes of Good and Evil) by Cicero, written in 45 BC.
+                        <p class="text-col-7a7a7a">Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of " de Finibus Bonorum et Malorum " (The Extremes of Good and Evil) by Cicero, written in 45 BC.
                         </p>
                     </div>
                 </div>
                 <div>
-                    <img src=" ./assets/images/sec3-img.png " class="w-90 d-flex gap-1 radious-1">
-                    <div class=" section3-div ">
+                    <img src=" ./assets/images/sec3-img.png " class="w-90 wm-100 d-flex gap-1 radious-1">
+                    <div class=" section3-div w-90">
                         <h3 class=" text-col-444444 ">Contrary to popular belief</h3>
-                        <p class="text-col-7a7a7a">Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of " de Finibus
-                            Bonorum et Malorum " (The Extremes of Good and Evil) by Cicero, written in 45 BC.
+                        <p class="text-col-7a7a7a">Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of " de Finibus Bonorum et Malorum " (The Extremes of Good and Evil) by Cicero, written in 45 BC.
                         </p>
                     </div>
                 </div>
                 <div>
-                    <img src=" ./assets/images/sec3-img.png " class="w-90 d-flex gap-1 radious-1">
-                    <div class=" section3-div ">
+                    <img src=" ./assets/images/sec3-img.png " class="w-90 wm-100 d-flex gap-1 radious-1">
+                    <div class=" section3-div w-90">
                         <h3 class=" text-col-444444 ">Contrary to popular belief</h3>
-                        <p class="text-col-7a7a7a">Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of " de Finibus
-                            Bonorum et Malorum " (The Extremes of Good and Evil) by Cicero, written in 45 BC.
+                        <p class="text-col-7a7a7a">Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of " de Finibus Bonorum et Malorum " (The Extremes of Good and Evil) by Cicero, written in 45 BC.
                         </p>
                     </div>
                 </div>
             </div>
             <div class=" sec3-div3 bg-f6f6f6 d-flex align-items-center my-3 radious-1">
-                <h1 class="text-col-444444 font-weight-bold">Subcribe to Our new model Cars</h1>
-                <p class=" text-col-7a7a7a ">Here enter the mail id its use for contact upcoming desiging deteils</p>
-                <div class=" sec3-sub ">
+                <h1 class="text-col-444444 font-weight-bold txt-center">Subcribe to Our new model Cars</h1>
+                <p class=" text-col-7a7a7a txt-center">Here enter the mail id its use for contact upcoming desiging deteils
+                </p>
+                <div class=" sec3-sub txt-center mym-1">
                     <input type=" email " placeholder=" enter email id " class="px-3">
-                    <button class=" sub-btn bg-444444"><a href=" # "
+                    <button class=" sub-btn bg-444444 mmy-1"><a href=" # "
                             class=" text-col-ffffff text-none font-weight-bold">Subcribe</a></button>
                 </div>
             </div>
@@ -221,20 +236,17 @@
 
     </section>
     <!-- footer -->
-    <footer class="bg-f6f6f6 ">
+    <footer class="bg-f6f6f6 pm-x">
         <div class="max-width">
             <img class=" footer-arrow " src=" ./assets/images/uparrow.png ">
-            <div class=" d-flex justify-space-bw w-95">
-                <div class=" footer-logo w-25">
+            <div class=" footer d-flex justify-space-bw w-95 flex-wrap mm-1">
+                <div class=" footer-logo w-25 wm-100">
                     <div>
                         <h4 class="text-col-444444">@ company logo</h4>
                     </div>
                     <div class=" logo-content ">
-                        <p class=" text-col-aaaaaa py-1">The first step is to know the vehicle. What kind of vehicle is
-                            it? How old is the vehicle? What are some of the vehicle’s more distinguishable features?
-                            What condition is the vehicle in?</p>
-                        <p class=" text-col-aaaaaa">&copy; 2022 your company All rights reserved terms of service.
-                            privacy policy
+                        <p class=" text-col-aaaaaa py-1">The first step is to know the vehicle. What kind of vehicle is it? How old is the vehicle? What are some of the vehicle’s more distinguishable features? What condition is the vehicle in?</p>
+                        <p class=" text-col-aaaaaa">&copy; 2022 your company All rights reserved terms of service. privacy policy
                         </p>
                     </div>
 
@@ -243,27 +255,26 @@
                     <h3 class="text-col-444444 px-1">Tags</h3>
                     <div class=" d-flex text-col-aaaaaa">
                         <div class=" footer-tag-aglin px-1 ">
-                            <p>cars</p>
-                            <p>audi</p>
-                            <p>Toyato</p>
+                            <p class="padd-px-bor text-center">cars</p>
+                            <p class="padd-px-bor text-center ">audi</p>
+                            <p class="padd-px-bor text-center ">Toyato</p>
                         </div>
                         <div class=" footer-tag-aglin px-1">
-                            <p>cars</p>
-                            <p>audi</p>
-                            <p>Toyato</p>
+                            <p class="padd-px-bor text-center ">cars</p>
+                            <p class="padd-px-bor text-center ">audi</p>
+                            <p class="padd-px-bor text-center ">Toyato</p>
                         </div>
                         <div class=" footer-tag-aglin px-1">
-                            <p>cars</p>
-                            <p>audi</p>
-                            <p>Toyato</p>
+                            <p class="padd-px-bor text-center ">cars</p>
+                            <p class="padd-px-bor text-center ">audi</p>
+                            <p class="padd-px-bor text-center ">Toyato</p>
                         </div>
                     </div>
                 </div>
                 <div class="footer-social-media  d-flex">
                     <h3 class="text-col-444444">Social Media</h3>
                     <div class=" d-flex ">
-                        <img class=" social-img " src=" ./assets/images/insta.png "><a
-                            class="  text-none text-col-aaaaaa " href=" # ">instagram</a>
+                        <img class=" social-img " src=" ./assets/images/insta.png "><a class="  text-none text-col-aaaaaa " href=" # ">instagram</a>
                     </div>
                     <div class=" d-flex "><img class=" social-img " src=" ./assets/images/twitter.png ">
                         <a href=" # " class=" text-none text-col-aaaaaa ">twitter</a>
@@ -292,7 +303,8 @@
 
 
     </footer>
-
+    <script src="./index.js">
+    </script>
 </body>
 
 </html>

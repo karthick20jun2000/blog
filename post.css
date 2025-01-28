@@ -385,54 +385,110 @@ header nav a {
     color: #464646;
 }
 
-.get-free {
-    height: 250px;
-}
-
-
-/* footer */
-
-
-/* it is a footer section style */
-
-.footer-social-media {
-    flex-direction: column;
-}
-
-.footer-social-media>a {
-    padding-top: 20px;
-}
-
-.footer-about {
-    flex-direction: column;
-}
-
-.footer-about>a {
-    padding-top: 15px;
-}
-
-footer {
-    background-color: #f6f6f6;
-    margin: auto;
-}
-
-.max-width {
-    max-width: 1000px;
-    margin: auto;
-}
-
-.footer-tag-aglin>p {
-    border-radius: 0.2em;
-    background-color: #ffffff;
-}
-
-.footer-arrow {
-    float: right;
-    margin-top: -15px;
-}
-
-.social-img {
-    /* width: 20px; */
-    height: 20px;
-    margin: 0px 10px 20px 0px;
+@media only screen and (max-width:992px) {
+    header {
+        flex-wrap: wrap;
+    }
+    header>nav {
+        display: none;
+    }
+    header>.imgs {
+        display: none;
+    }
+    .toggle {
+        display: inline-block;
+        margin: 0px;
+        padding: 0px;
+    }
+    .get-free {
+        height: 250px;
+    }
+    .top {
+        display: none;
+    }
+    .bottum {
+        display: block;
+    }
+    /* footer */
+    /* it is a footer section style */
+    .footer-social-media {
+        flex-direction: column;
+    }
+    .footer-social-media>a {
+        padding-top: 20px;
+    }
+    .footer-about {
+        flex-direction: column;
+    }
+    .footer-about>a {
+        padding-top: 15px;
+    }
+    footer {
+        background-color: #f6f6f6;
+        margin: auto;
+    }
+    .max-width {
+        max-width: 1000px;
+        margin: auto;
+    }
+    .footer-tag-aglin>p {
+        border-radius: 0.2em;
+        background-color: #ffffff;
+    }
+    .footer-arrow {
+        float: right;
+        margin-top: -15px;
+    }
+    .social-img {
+        /* width: 20px; */
+        height: 20px;
+        margin: 0px 10px 20px 0px;
+    }
+    @media only screen and (max-width:992px) {
+        .footer {
+            flex-wrap: wrap;
+        }
+    }
+    @media only screen and (max-width:992px) {
+        .top {
+            display: inline-block;
+        }
+        .bottom {
+            display: none;
+        }
+    }
+    .flex-wrap {
+        flex-wrap: wrap;
+    }
+    .mw-95 {
+        width: 95% !important;
+    }
+    .txt-justify {
+        text-align: justify;
+    }
+    .txt-center {
+        text-align: center;
+    }
+    .justify-content-centerm {
+        justify-content: center;
+    }
+    .wm-100 {
+        width: 100% !important;
+    }
+    .mym-1 {
+        margin: 1em 0em;
+    }
+    .get-free {
+        height: auto;
+    }
+    .pxm-1 {
+        padding: 0em 1em;
+    }
+    .mm-0 {
+        margin: 0em;
+    }
+    .mym-0 {
+        margin-top: 0em;
+        margin-bottom: 0em;
+    }
 }

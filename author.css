@@ -366,6 +366,28 @@ header nav a {
     color: #464646;
 }
 
+@media only screen and (max-width: 750px) {
+    header {
+        flex-wrap: wrap;
+    }
+    header>nav {
+        display: none;
+    }
+    header>.imgs {
+        display: none;
+    }
+    .toggle {
+        display: inline-block;
+        margin: 0px;
+        padding: 0px;
+    }
+    .toggle:hover+nav {
+        display: inline-block;
+        flex-direction: row;
+        background-color: red;
+    }
+}
+
 .sec3-div3 {
     display: flex;
     flex-direction: column;
@@ -438,4 +460,34 @@ footer {
     /* width: 20px; */
     height: 20px;
     margin: 0px 10px 20px 0px;
+}
+
+@media only screen and (max-width:750px) {
+    .footer {
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .flex-wrap {
+        flex-wrap: wrap;
+    }
+    .mym-1 {
+        margin: 1em;
+    }
+    .pxm-1 {
+        padding: 0em 1em;
+    }
+    .txt-center {
+        text-align: center;
+    }
+    .wm-100 {
+        width: 100% !important;
+    }
+    .txt-justify {
+        text-align: justify;
+    }
+    .justify-content-centerm {
+        justify-content: center;
+    }
 }
